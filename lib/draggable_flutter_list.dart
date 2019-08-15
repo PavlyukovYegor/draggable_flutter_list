@@ -25,6 +25,8 @@ class DragAndDropList extends StatefulWidget {
 
   final ScrollController scrollController;
 
+  final ScrollPhysics physics;
+
   DragAndDropList(this.rowsCount,
       {Key key,
       @required this.itemBuilder,
@@ -32,8 +34,10 @@ class DragAndDropList extends StatefulWidget {
       @required this.canBeDraggedTo,
       this.dragElevation = 0.0,
       this.canDrag,
+      physics,
       scrollController})
       : this.scrollController = scrollController ?? ScrollController(),
+        this.physics = physics ?? ScrollPhysics(),
         super(key: key);
 
   @override
@@ -130,6 +134,7 @@ class _DragAndDropListState extends State<DragAndDropList> {
     return new LayoutBuilder(
       builder: (BuildContext context3, constr) {
         return new ListView.builder(
+          physics: widget.physics,
           itemBuilder: (BuildContext context2, int index) {
             return _getDraggableListItem(context2, index, context3);
           },

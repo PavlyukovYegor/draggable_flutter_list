@@ -34,6 +34,30 @@ class MyHomePageState extends State<MyHomePage> {
   List<String> items = [
     '0',
     '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
+    'd',
+    '0',
+    '1sfsdfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfdsfdsfsafafsafdsafsadfsadf',
     'd'
   ];
   @override
@@ -44,6 +68,7 @@ class MyHomePageState extends State<MyHomePage> {
       ),
       body: new DragAndDropList(
         items.length,
+        // physics: NeverScrollableScrollPhysics(),
         itemBuilder: (BuildContext context, index) {
           return new SizedBox(
             child: new Card(
